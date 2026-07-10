@@ -1,0 +1,47 @@
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(28,27,25,.92);
+  border-bottom:1px solid #3a3733;
+}
+.site-header .wrap{
+  display:flex;
+  
+  justify-content:space-between;
+  padding-top:14px;
+  padding-bottom:14px;
+}
+.logo{
+  font-family:'Bebas Neue', 'Arial Narrow', sans-serif;
+  font-size:1.5rem;
+  letter-spacing:.08em;
+}
+.logo span{
+  color:#c97b3d;
+}
+.nav-links{
+  display:flex;
+  gap:.8rem;
+  font-family:'JetBrains Mono', 'Courier New', monospace;
+  font-size:.78rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.nav-links a{
+  display:inline-block;
+  padding:.6rem 1.2rem;
+  border-radius:3px;
+  background:#242220;
+  border:1px solid #3a3733;
+  transition:color .15s ease, border-color .15s ease, background .15s ease;
+}
+.nav-links a:hover{
+  color:#c97b3d;
+  border-color:#c97b3d;
+}
+.nav-links a.active{
+  background:#c97b3d;
+  border-color:#c97b3d;
+  color:#1c1b19;
+}

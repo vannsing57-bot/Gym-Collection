@@ -1,0 +1,164 @@
+
+.category-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:28px;
+  padding:70px 0;
+}
+
+.category-grid > .category-card{
+  flex:1 1 420px;
+}
+
+.category-card{
+  background:#242220;
+  border:1px solid #3a3733;
+  border-radius:3px;
+  padding:40px;
+  position:relative;
+  overflow:hidden;
+  transition:border-color .2s ease, transform .2s ease;
+}
+
+.category-card:hover{
+  border-color:#c97b3d;
+  transform:translateY(-4px);
+}
+
+.category-icon{
+  width:64px;
+  height:64px;
+  margin-bottom:1.6rem;
+  color:#c97b3d;
+}
+
+.category-card h3{
+  margin-bottom:.6rem;
+}
+
+.category-card p{
+  margin-bottom:1.6rem;
+}
+.value-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:28px;
+  padding:70px 0;
+}
+
+.value-grid > .value-card{
+  flex:1 1 280px;
+}
+
+.value-card{
+  border-top:2px solid #8a5528;
+  padding-top:1.2rem;
+}
+
+.value-card h3{
+  font-size:1.1rem;
+  margin-bottom:.5rem;
+  color:#f2efe9;
+}
+
+.value-card p{
+  font-size:.92rem;
+}
+.product-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:26px;
+  padding:20px 0 90px;
+}
+
+.product-grid > .product-card{
+  flex:1 1 300px;
+}
+
+.product-card{
+  background:#242220;
+  border:1px solid #3a3733;
+  border-radius:3px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s ease, border-color .2s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-4px);
+  border-color:#c97b3d;
+}
+
+.product-media{
+  aspect-ratio:4/3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  object-fit:contain;
+  border-bottom:1px solid #3a3733;
+}
+
+.product-media img{
+  width:42%;
+  height:42%;
+  color:#7c8471;
+}
+
+.product-body{
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+  flex:1;
+}
+
+.product-body h3{
+  font-family:'Work Sans', -apple-system, sans-serif;
+  text-transform:none;
+  letter-spacing:0;
+  font-weight:600;
+  font-size:1.02rem;
+}
+
+.product-media{
+  font-family:'JetBrains Mono', 'Courier New', monospace;
+  font-size:.78rem;
+  color:#a9a395;
+}
+
+.product-price{
+  font-family:'JetBrains Mono', 'Courier New', monospace;
+  font-size:1.05rem;
+  color:#c97b3d;
+  margin-top:auto;
+  padding-top:.6rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.product-price button{
+  font-family:'JetBrains Mono', 'Courier New', monospace;
+  font-size:.72rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  background:transparent;
+  border:1px solid #3a3733;
+  color:#f2efe9;
+  padding:.5rem .8rem;
+  border-radius:3px;
+  cursor:pointer;
+  transition:border-color .15s ease, color .15s ease;
+}
+
+.product-price button:hover{
+  border-color:#c97b3d;
+  color:#c97b3d;
+}
+
+.product-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
